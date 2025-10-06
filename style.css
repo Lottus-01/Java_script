@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+*{
+
+}
+
+.titulo{
+    font-family: "Vollkorn SC", serif;
+  font-weight: 50;
+  color: hwb(38 25% 3% / 0.968);
+
+  text-align: center;
+  padding: 60px;
+}
