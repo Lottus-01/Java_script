@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>LISTA DE TAREFAS</h1>
+
+    <input type="text" id="item" placeholder="Novo item" />
+    <input type= "text" id="data" placeholder="Data">
+    <button onclick="adicionaritem ()">Add</button>
+
+
+    <table id="tabela" border="1">
+  <tr>
+    <th>Tarefa</th>
+    <th>dia</th>
+  </tr>
+</table>
+        
+
+    <script>
+        function adicionaritem() {
+
+            const text = document.getElementById("item").value;
+            const text2 = document.getElementById("data").value;
+
+             const tabela = document.getElementById("tabela");
+             const linha = tabela.insertRow();
+        
+            //*const novoItem = document.createElement("li");*//
+            //*novoItem.textContent = text +" "+ text2;*//
+
+            const celula1 = linha.insertCell(0);
+            const celula2 = linha.insertCell(1);
+
+            celula1.textContent = text;
+            celula2.textContent = text2;
+
+            document.getElementById("item").value = "";
+            document.getElementById("data").value = "";
+        }
+    </script>
+
+</body>
+</html>
